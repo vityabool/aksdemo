@@ -15,5 +15,7 @@ az acr login --name wtacr101
 docker tag microsoft/azure-vote-front:v1 wtacr101.azurecr.io/azure-vote-front:v1
 docker push wtacr101.azurecr.io/azure-vote-front:v1
 
+docker pull 
+
 # Get ACR admin password
 az acr credential show --name wtacr101 --resource-group wellnesstrace --query "passwords[0].value"

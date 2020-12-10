@@ -49,13 +49,13 @@ spec:
         name: wordpress
         env:
         - name: WORDPRESS_DB_HOST
-          value: twmysql.mysql.database.azure.com
+          value: <db>
         - name: WORDPRESS_DB_USER
-          value: mysqladmin@twmysql.mysql.database.azure.com
+          value: <username@fqdn>
         - name: WORDPRESS_DB_NAME
-          value: wtdb
+          value: <dbname>
         - name: WORDPRESS_DB_PASSWORD
-          value: U0baR3&U
+          value: <password>
         ports:
         - containerPort: 80
           name: wordpress
